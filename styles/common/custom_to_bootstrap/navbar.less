@@ -1,0 +1,50 @@
+.navbar-clienddev{
+    background: #202020;
+    border-bottom:3px solid @brand-primary;
+    
+    a.logo{
+        margin-top:6px;
+        margin-bottom:6px;
+        // background: url(/images/logo/200x38.png) no-repeat top left;
+        background: url(../../../images/logo/big.png) no-repeat top left;
+        background-size: cover;
+        width: 200px;
+        height: 38px;
+    }
+    
+    li{
+        a{
+            color:#fff;
+        }
+    }
+    
+    li, a:not(.logo), li.open, li.active{
+        &:hover, &:focus, &:active{
+            background: @brand-primary;
+        }
+    }
+    
+    li.open, li.active{
+        & > a{
+            background: @brand-primary;
+        }
+    }
+    
+    .dropdown-menu li a{
+        color:#000;
+        
+        &:hover{
+            color:#fff;
+        }
+    }
+    
+    .navbar-text{
+        color:#fff;
+    }
+    
+    .navbar-toggle{
+        .icon-bar{
+            background: #fff;
+        }
+    }
+}

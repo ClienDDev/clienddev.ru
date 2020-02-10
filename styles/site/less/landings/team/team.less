@@ -1,0 +1,122 @@
+@import "./../base/base.less";
+
+#edit_link{
+    position: fixed;
+    top:0;
+    right:0;
+    z-index:500;
+    font-size:30px;
+    margin:5px;
+    color:@brand-primary;
+    opacity: 0.2;
+    
+    &:hover{
+        opacity: 1;
+    }
+}
+
+#team{
+    #top{
+        .top();
+        
+        background-size:cover;
+        background-position: center center;
+        background-attachment:  fixed;
+        background-repeat: none;
+        border-bottom:3px solid @brand-primary;
+        
+        h1{
+            float:left;
+            
+            a{
+                color:#fff;
+                text-align: left;
+                font-weight: 100;
+                font-size:50px;
+                
+                small{
+                    color:#fff;
+                }
+                
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        
+        .clienddev{
+            float:right;
+            line-height: 50px;
+            margin-top:25px;
+        }
+    }
+    
+    .pan{
+        background: rgba(0, 0, 0, 0.6);
+        border-color: @brand-primary;
+        border-style: solid;
+        border-width: 0;
+        
+        &#header{
+            background: #202020;
+            border-bottom-width:3px;
+        }
+        
+        &#sidebar{
+            border-left-width:3px;
+            margin-top:30px;
+            padding-right:0;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+            
+            .list-group-item{
+                background: transparent;
+                color:#fff;
+                border:0;
+                
+                &.photo{
+                    padding:0;
+                    
+                    img{
+                        width:100%;
+                    }
+                }
+                
+                .name{
+                    font-weight: bold;
+                }
+                .login{
+                    float:right;
+                    opacity: 0.5;
+                }
+            }
+            a.list-group-item{
+                &:hover{
+                    background: @brand-primary;
+                }
+            }
+        }
+    }
+    
+    #page{
+        .page();
+        
+        #about{
+            h1.page-header{
+                text-align: left !important;
+            }
+            img{
+                float:left;
+                margin-right:10px;
+            }
+            #text{
+                font-size:20px;
+            }
+        }
+        
+        #projects{
+            @import "./../base/projects.less";
+        } // #projects
+    }
+    
+    @import "media.less";
+}

@@ -1,0 +1,145 @@
+@import "./../base/base.less";
+
+#landing{
+	background: #EBEBEB;
+
+	nav{
+		z-index:100;
+	}
+
+	#top{
+		.top();
+		
+		#home_content{
+			vertical-align: middle;
+			display: table-cell;
+			text-align: center;
+			padding-top:50px;
+			padding-bottom:50px;
+			
+			#logo_link{
+				display: block;
+				overflow: hidden;
+				max-width: 800px;
+				width:100%;
+				margin: 0 auto;
+				text-align:center;
+
+				img{
+					display: block;
+					margin:0 auto;
+					width: 95%;
+				}
+			}
+			
+			h2{
+				margin-top:25px;
+				color:#000;
+				font-weight: 100;
+				font-size:40px;
+			}
+			
+			.techs{
+				color:#333;
+				font-size:50px;
+				
+				i{
+					margin:10px;
+				}
+			}
+			
+			.menu{
+				margin-top:50px;
+				font-size:35px;
+				overflow: hidden;
+				
+				a{
+					text-decoration: none;
+					color:@brand-primary;
+					font-weight: 100;
+					padding:5px 15px;
+					margin:10px;
+					width: 100%;
+					
+					&:hover{
+						background: @brand-primary;
+						transition: background 0.3s;
+						color:#fff;
+					}
+				}
+			}
+		}
+	}
+	
+	#menu{
+		z-index:100;
+	} 
+	
+	.page{
+		.page();
+			
+		&#projects{
+			@import "./../base/projects.less";
+		} // #projects
+			
+		&#we{
+			@import "./we.less";
+		} // #we
+
+		&#contact_form{
+			@import "./contact_form.less";
+		}
+
+		&#amocrm{
+			text-align: center;
+			padding-top:10px;
+			padding-bottom:10px;
+
+			a{
+				color:#fff;
+				font-size:40px;
+				font-weight: 100;
+				text-decoration: none;
+			}
+
+			*{
+				display: inline;
+			}
+			img{
+				height: 40px;
+				margin-bottom:10px;
+			}
+		}
+			
+		&#footer{
+			.links{
+				a{
+					font-size:18px;
+					padding:5px;
+					text-decoration: none;
+					display: block;
+					color:#fff;
+
+					&:hover{
+						color:lighten(@brand-primary, 25%);
+					}
+				}
+			}
+
+			img{
+				max-width: 100%;
+				width: 350px;
+				margin-top:3px;
+			}
+
+			p{
+				color:#eee;
+				text-align: left;
+				font-size:18px;
+				padding:5px;
+			}
+		}
+	} // #page
+	
+	@import "media.less"; 
+} // #landing

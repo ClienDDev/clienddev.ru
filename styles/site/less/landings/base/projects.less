@@ -1,0 +1,47 @@
+.projects{
+    overflow: hidden;
+    padding-bottom:15px;
+    
+    .project{
+        display: block;
+        text-decoration: none;
+        color: #111;
+
+        .project_content{
+            margin-top: 10px;
+            background: #fff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.26);
+            padding-bottom:5px;
+            border-radius: 3px;
+
+            .img_container{
+                height: 200px;
+                overflow: hidden;
+                text-align: center;
+
+                img{
+                    text-align: center;
+                    max-width: 100%;
+                    max-height: 100%;
+                    // margin-top: -20%; // TODO: сделать нормальное выравнивание по вертикали внутри блока-контейнера картинки
+                }
+            }
+            
+            h2, p{
+                padding-left:25px;
+                padding-right:25px;
+            }
+
+            h2{
+                margin-top: 10px;
+                font-weight: 100;
+            }
+        }
+
+        &:hover{
+            .project_content{
+                box-shadow: 0 2px 20px rgba(0,0,0,0.26);
+            }
+        }
+    } // .project
+} // .projects

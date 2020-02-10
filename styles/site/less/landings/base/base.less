@@ -1,0 +1,88 @@
+@import "./../../../../common/bootstrap/less/variables.less";
+
+.top(){
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: table;
+	z-index:200;
+	border-bottom:3px solid @brand-primary;
+}
+
+.page_header(){
+	.page-header{
+		margin:0;
+		border:0;
+		font-weight: 100;
+		color:@brand-primary;
+	}
+	h1.page-header{
+		font-size:39pt;
+	}
+}
+
+.page(){
+	min-height: 100%;
+	border-top:1px solid #ccc;
+	
+	&.screen{
+		padding-top:70px;
+		padding-bottom:70px;
+		overflow: hidden;
+
+		h1 + p{
+			font-size:18px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			color:#555;
+		}
+
+		&.blue{
+			background: @brand-primary;
+		}
+
+		&.dark-blue{
+			background: darken(#00BFFF, 40%);
+		}
+		&.dark{
+			background: #333;
+		}
+		&.black{
+			background: #000;
+		}
+
+		&.black, &.blue, &.dark-blue, &.dark{
+			border-top:none;
+
+			h1 + p, h1:not(.page-header), h3, label{
+				color:#fff !important;
+			}
+		}
+		
+		.page_header();
+		
+		
+		.block_more{
+			margin-top:20px;
+			margin-bottom:50px;
+			font-weight: 100;
+		}
+	}
+}
+
+footer{
+	a{              
+		text-decoration: none;
+
+		&:hover{
+			text-decoration: none;
+			color:lighten(@brand-primary, 25%);
+		}
+	}
+}
+.center{
+	text-align: center;
+}
