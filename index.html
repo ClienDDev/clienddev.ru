@@ -5,199 +5,80 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
 	<meta name="theme-color" content="#0099cc">
     <title>Создание сайтов и мобильных приложений - ClienDDev team</title>
-	<link rel="stylesheet" href="styles/common/bootstrap/clienddev_bootstrap.min.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="styles/site/css/landing.min.css">
-	<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>	
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/site/landings.js"></script>
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			margin: 0;
+		    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+		    font-size: 1rem;
+		    font-weight: 400;
+		    line-height: 1.5;
+		    color: #212529;
+		    text-align: left;
+		    background-color: #fff;
+		}
+
+		a {
+			color: #0099cc;
+		}
+
+		.container {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		header {
+			margin-top: 30px;
+		}
+		header #logo {
+			max-width: 600px;
+		}
+		header h2 {
+			margin-top: 10px;
+		}
+
+		section {
+			font-size: 18px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+	</style>
 </head>
 <body>
-    <div id="landing">
-		<div id="top">
-			<div id="home_content">
-				<a href="/" id="logo_link">
-					<img src="images/logo/big.png" alt="ClienDDev team" class="img-responsive" id="logo">
+	<div class="container">
+		<header>
+			<a href="/">
+				<img src="logo.png" alt="ClienDDev team" class="img-responsive" id="logo">
+			</a>
+			<h2>Разработка сайтов и мобильных приложений</h2>
+		</header>	
+		<main>
+			<section>
+				<h3>Команда</h3>
+				<a href="https://mustafin.dev" target="_blank">Тимур Мустафин</a><br>
+				<a href="https://atnartur.dev" target="_blank">Артур Атнагулов</a><br>
+				<a href="https://chirkov.dev" target="_blank">Илья Чирков</a><br>
+				<a href="https://mssg.me/khabiroff" target="_blank">Булат Хабиров</a>
+			</section>
+
+			<section>
+				<h3>Контакты</h3>
+				<a href="mailto:contact@clienddev.ru" title="Написать нам на почту">
+					contact@clienddev.ru
 				</a>
-				<h2>Разработка сайтов и мобильных приложений</h2>
-				
-				<div class="techs">
-					<i class="fa fa-html5"></i>
-					<i class="fa fa-css3"></i>
-					<i class="fa fa-android"></i>
-					<i class="fa fa-apple"></i>
-				</div>
-				<div class="menu">
-					<a href="#projects">
-						<i class="fa fa-tasks"></i><span>Портфолио</span>
-					</a>
-					<a href="#we">
-						<i class="fa fa-users"></i><span>Мы</span>
-					</a>
-					<a href="#contact_form">
-						<i class="fa fa-envelope-o"></i><span>Контакты</span>
-					</a>
-				</div>
-			</div>
-		</div>
-		<nav class="navbar navbar-clienddev navbar-fixed-top" id="menu">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand page-scroll logo" href="#top"></a>
-				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="#projects"><i class="fa fa-tasks"></i> Портфолио</a>
-						</li>
-						<li>
-							<a href="#we"><i class="fa fa-users"></i> Мы</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#contact_form"><i class="fa fa-envelope-o"></i> Контакты</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<div class="page screen" id="projects">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 class="page-header">Портфолио</h1>
-						<p>Наша команда специализируется на разработке качественных и современных ИТ-продуктов для решения ваших задач. Мы способны разработать проект любой сложности с применением различных технологий: от сайта-визитки и лендинга до сложной интерактивной системы, включающей в себя и решения из сферы Интернета Вещей. Здесь представлены наши последние реализованные проекты:</p>
-					</div>
-				</div>
-				
-				<div class="projects row">
-					<a class="project col-md-4 col-xs-12" href="http://need4speak.com" target="_blank">
-						<div class="project_content">
-							<div class="img_container">
-								<img src="img/need4speak.png">
-							</div>
-							<h2>Need4Speak</h2>
-							<p>Разработка веб-сайта с интеграцией и настройкой CRM</p>
-						</div>
-					</a>
-					<a class="project col-md-4 col-xs-12" href="http://cliend.ru" target="_blank">
-						<div class="project_content">
-							<div class="img_container">
-								<img src="images/projects/cliend700.png">
-							</div>
-							<h2>ClienD</h2>
-							<p>Приожение для удобнго доступа к порталу edu.tatar.ru</p>
-						</div>
-					</a>
-					<a class="project col-md-4 col-xs-12" href="http://rvmarket.ru" target="_blank">
-						<div class="project_content">
-							<div class="img_container">
-								<img src="img/rvmarket.png" style="margin-top:0;">
-							</div>
-							<h2>RVMarket</h2>
-							<p>Серверная часть и административная панель для 3D-плеера диванов</p>
-						</div>
-					</a>	
-				</div>
-			</div>
-		</div>
-		<div id="we" class="page screen">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 class="page-header">Мы</h1>
-						
-						<p>Мы делаем этот мир лучше. Залог успеха кроется в том, что каждый из нас - профессионал в своей области. Мы любим свое дело и стараемся, чтобы каждая задача была выполнена в максимально короткие сроки с максимально возможным качеством. Итак, все это становится возможно благодаря следующим людям:</p>
-					</div>
-					<div class="we">
-						<div class="people col-xs-12  col-sm-4 col-sm-offset-0 col-md-2">
-							<div class="people_content">
-								<img src="img/artur.jpg" alt="Артур Атнагулов">
-								<h1>Артур Атнагулов <small>atnartur</small></h1>
-								<p>веб-разработчик</p>
-							</div>
-						</div>
-						<div class="people col-xs-12  col-sm-4 col-sm-offset-0 col-md-2">
-							<div class="people_content">
-								<img src="img/timur.jpg" alt="Тимур Мустафин">
-								<h1>Тимур Мустафин <small>mr14mr</small></h1>
-								<p>менеджмент, разработчик</p>
-							</div>
-						</div>
-						<div class="people col-xs-12  col-sm-4 col-sm-offset-0 col-md-2">
-							<div class="people_content">
-								<img src="img/bulat.jpg" alt="Булат Хабиров">
-								<h1>Булат Хабиров <small>khabiroff</small></h1>
-								<p>iOS-разработчик</p>
-							</div>
-						</div>
-						<div class="people col-xs-12  col-sm-4 col-sm-offset-0 col-md-2">
-							<div class="people_content">
-								<img src="img/ilya.jpg" alt="Илья Чирков">
-								<h1>Илья Чирков <small>ilyamodder</small></h1>
-								<p>android-разработчик</p>
-							</div>
-						</div>
-						<div class="people col-xs-12  col-sm-4 col-sm-offset-0 col-md-2">
-							<div class="people_content">
-								<img src="img/anvar.jpg" alt="Анвар Закиров">
-								<h1>Анвар Закиров <small>anvarzkr</small></h1>
-								<p>разработчик</p>
-							</div>
-						</div>
-						<div class="people col-xs-12  col-sm-4 col-sm-offset-0 col-md-2">
-							<div class="people_content">
-								<img src="img/andrey.jpg" alt="Андрей Александров">
-								<h1>Андрей Александров <small>postgred</small></h1>
-								<p>веб-разработчик, системный администратор</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="footer" class="screen page black">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-md-offset-2">
-						<img src="images/logo/big.png">
-						<p>разработка веб-сайтов и<br> мобильных приложений</p>
-						<div class="links">
-							<a href="ClienDDev.pdf">
-								<i class="fa fa-file-powerpoint-o"></i> презентация
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<h1 class="page-header">Контакты</h1>
-						<div class="links">
-							<a href="mailto:contact@clienddev.ru">
-								<i class="fa fa-envelope-o"></i> contact@clienddev.ru
-							</a>
-							<a href="http://vk.com/clienddev">
-								<i class="fa fa-vk"></i> /clienddev
-							</a>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-		
+				<br>
+				<a href="http://vk.com/clienddev" target="_blank" title="Мы ВКонтакте">
+					vk.com/clienddev
+				</a>
+			</section>
+		</main>
+		<footer>
+		    &copy 2013-2020
+		</footer>
 	</div>
-	<footer>
-	    <div class="container">
-	        <p class="pull-left">
-	            &copy 2013-2020 <a href="/" class="logo">ClienDDev team</a>.
-	        </p>
-	    </div>
-	</footer>
 
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter26033907 = new Ya.Metrika({ id:26033907, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/26033907" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </body>
